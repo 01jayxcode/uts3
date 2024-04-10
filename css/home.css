@@ -1,0 +1,390 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.3em; /* Adjust the value as needed */
+    -webkit-user-select: none; /* Safari */
+}
+
+
+@media only screen and (max-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+
+    .timg{
+        margin: -8px 0px 0px -8px;
+        height: 310px;
+        position: absolute;
+    }
+    .showticket{
+        height: 50px;
+        width: 50px;
+        border: 1px solid #ffffff00;
+        position: absolute;
+        margin: 158px 0px 0px 286px;
+        z-index: 1;
+    
+    }
+
+    .hiddenpage{
+        height: 50px;
+        width: 50px;
+        border: 1px solid #ffffff00;
+        position: absolute;
+        margin: -6px 0px 0px 0px;
+        z-index: 1;
+    
+
+    }
+
+   
+    .toggle input {
+        display: none;
+    }
+    
+    /* Style the slider */
+    .slider {
+        margin-top: 8px;
+        position: absolute;
+        display: inline-block;
+        width: 341px;
+        height: 43px; /* Decreased height by 6px */
+        background-color: #e7e7e7;
+        margin-left: 8px;
+        border-radius: 5px;
+    }
+    
+    /* Style the slider knob */
+    .slider::before {
+        content: "";
+        position: absolute;
+        width: 170px;
+        height: 39px; /* Decreased height by 6px to match the slider height */
+        top: 2px; /* Adjusted top to maintain the gap from the top */
+        bottom: 4px; /* Adjusted bottom to maintain the gap from the bottom */
+        left: 2px; /* Add 2px gap from the left */
+        right: 2px; /* Add 2px gap from the right */
+        background-color: white;
+        border-radius: 5px; /* Set border-radius to 5px for rectangular shape */
+        transition: 0.4s;
+        box-shadow: 0px 0px 3px #b4b0b0;
+    }
+    
+    /* Move the knob when checkbox is checked */
+    input:checked + .slider::before {
+        transform: translateX(167px); /* Translate by width - knob width + gap */
+    }
+    
+    /* Style the slider when it's active */
+    input:checked + .slider {
+        background-color: #e7e7e7;
+    }
+
+
+    .bookbox{
+        height: 300px;
+        width: 358px;
+        border: none;
+        margin: 305px 0px 0px -1px;
+        position: absolute;
+        box-shadow: 1px 1px 7px #ababab;
+        border-radius: 5px;
+        padding-bottom: 48px;
+    }
+
+    .normal{
+        height: 33px;
+        width: 359px;
+        border: none;
+        /* background: linear-gradient(to right, #F44336, #a64212); */
+        color: white;
+        background: #fb7d5a;;
+        border-radius: 4px;
+    }
+    .info{
+           /* border: 2px solid black; */
+            box-shadow: 0px 0px 9px rgb(152, 152, 152);
+            border-radius: 3px;
+            /* padding: .5em; */
+            width: 90%;
+            margin: auto;
+            margin-top: 3.2em;
+            height: 29%;
+            display: none;
+    
+        }
+        #lightInfo{
+            color: #d1734e;
+            margin-left: 4px;
+            font-size: 15px;
+            line-height: 18px;
+            padding-top: 6px;
+        
+        }
+        #redInfo{
+            margin: 9px 0px 0px 4px;
+            position: absolute;
+            color: red;
+            font-size: 15px;
+        }
+        #redInfo2{
+            margin: 9px 0px 0px 4px;
+            position: absolute;
+            color: red;
+            font-size: 15px;
+        }
+
+
+        .info2{
+            /* border: 2px solid black; */
+             box-shadow: 0px 0px 9px rgb(152, 152, 152);
+             border-radius: 3px;
+             /* padding: .5em; */
+             width: 90%;
+             margin: auto;
+             margin-top: 3.2em;
+             height: 35%;
+             display: block;
+     
+         }
+
+        #lightInfo2{
+            color: #d1734e;
+            margin-left: 4px;
+            font-size: 15px;
+            line-height: 18px;
+            padding-top: 6px;
+        
+        }
+        #redInfo2{
+            margin: -15px 0px 0px 4px;
+            position: absolute;
+            color: red;
+            font-size: 15px;
+        }
+        #redInfo22{
+            margin: 4px 0px 0px 4px;
+            position: absolute;
+            color: red;
+            font-size: 15px;
+        }
+
+        #blueinfo{
+            color: #3b7ffd;
+            position: absolute;
+            margin-top: 5px;
+            margin-left: 4px;
+            font-size: 15px;
+        
+        
+        }
+
+        .depart{
+            width: 150px;
+            height: 129px;
+            /* border: 1px solid black; */
+            content: center;
+            /* margin: auto; */
+            margin: -4px 0px 0px 34px;
+            /* display: none; */
+            font-size: 13px;
+            font-weight: 600;
+        
+        }
+
+        .dep{
+            margin-top: 25px;
+            line-height: 0px;
+            margin-left: 10px;
+        
+        }
+
+        .stn{
+            margin-left: 24px;
+            /* font-weight: bolder; */
+            font-size: 22px;
+            line-height: 10px;
+        }
+
+        .stname{
+            margin-top: -9px;
+            margin-left: 8px;
+        }
+
+        .nexttrain{
+            height: 42px;
+            border: none;
+            width: 140px;
+            border-radius: 25px;
+            margin: -7px 0px 0px -19px;
+            background: #fb7d5a;
+            color: white;
+            font-size: 17px;
+            margin-top: -18px;
+            position: absolute;
+        }
+
+        .line{
+            position: absolute;
+            margin: -18px 0px -1px -12px;
+            color: #fb7d5a;
+            font-weight: bold;
+            margin-top: -28px;
+        }
+
+        .goingto{
+            width: 150px;
+            height: 129px;
+            /* border: 1px solid black; */
+            content: center;
+            /* margin: auto; */
+            margin: -4px 0px 0px 34px;
+            /* display: none; */
+            position: absolute;
+            margin-top: -154px;
+            margin-left: 216px;
+            font-size: 13px;
+            font-weight: 600;
+        
+        }
+
+        .dep2{
+            margin-top: 25px;
+            line-height: 0px;
+            margin-left: 20px;
+        }
+
+        .stn2{
+            margin-left: 24px;
+            /* font-weight: bolder; */
+            font-size: 22px;
+            line-height: 10px;
+        }
+
+        .stname2{
+            margin-top: -9px;
+            margin-left: 7px;
+        }
+
+        .nexttrain2{
+            height: 42px;
+            border: none;
+            width: 163px;
+            border-radius: 25px;
+            margin: -7px 0px 0px -13px;
+            background: #fb7d5a;
+            color: white;
+            font-size: 17px;
+            margin-top: -18px;
+            position: absolute;
+            margin-left: -38px;
+        }
+
+        .line2{
+            position: absolute;
+            margin: -18px 0px -1px -12px;
+            color: #fb7d5a;
+            font-weight: bold;
+            margin-top: -28px;
+        }
+
+        .arrowimg{
+            position: absolute;
+            height: 40px;
+            margin: -124px 1px 1px 132px;
+        }
+
+        .bbar{
+            height: 38px;
+            position: fixed;
+            z-index: 2;
+            margin-left: -9px;
+            margin-top: 624px;
+        }
+
+        .greenline{
+            height: 682px;
+            position: absolute;
+            width: 1px;
+            background-color: #cfff00;
+            z-index: 3;
+            margin-left: 190px;
+            margin-top: -16px;
+    
+        }
+
+        .greenline2{
+            height: 682px;
+            position: absolute;
+            width: 1px;
+            background-color: #00ef00;
+            z-index: 3;
+            margin-left: 240px;
+            margin-top: -16px;
+    
+        }
+
+        .greenline3{
+            height: 682px;
+            position: absolute;
+            width: 1px;
+            background-color: #00ef00;
+            z-index: 3;
+            margin-left: 250px;
+            margin-top: -16px;
+    
+        }
+
+        .login{
+            height: 409px;
+            position: absolute;
+            z-index: 3;
+            margin-top: 252px;
+            margin-left: -9px;
+            display: none;
+            animation: slideIn 0.5s forwards; /* Animation */
+
+        }
+
+        .bookinghistory{
+            position: absolute;
+            height: 56px;
+            width: 240px;
+            margin-top: 152px;
+            z-index: 3;
+        
+        
+        }
+
+        .myprofile{
+            position: absolute;
+            height: 56px;
+            width: 358px;
+            margin-top: 224px;
+            z-index: 3;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+            display: none;
+        }
+        @keyframes slideIn {
+            from {
+                margin-top: 100%; /* Start position */
+            }
+            to {
+                margin-top: 252px; /* End position */
+            }
+        }
+        
+
+}
+
+  
+
+  
+

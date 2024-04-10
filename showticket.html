@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/showticket.css">
+    <title>UTS</title>
+</head>
+<body>
+
+    <div class="greenline">
+
+    </div>
+    <div class="greenline2">
+        
+    </div>
+    <div class="greenline3">
+        
+    </div>
+    <a href="index.html"><div class="back"></div></a>
+    <img src="images/showticket.jpeg" alt="" class="image1">
+    <div class="orangebox">
+
+    </div>
+    <div class="pricebox">
+        <span id="price">20</span>.00
+    </div>
+    <div class="datebox">
+        <span id="dates">27/03/2024 09:20</span>
+    </div>
+
+    <div class="source">
+        <span id="source">AMBERNATH</span>
+    </div>
+
+    <div class="destination">
+        <span id="destination">THANE</span>
+    </div>
+
+    <a href="ticket.html"><div class="link"></div></a>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Fetch data from localStorage
+    const storedData = localStorage.getItem('formData');
+    
+    if (storedData) {
+        // Parse the JSON data
+        const formData = JSON.parse(storedData);
+        
+        // Update the HTML elements with the fetched data
+        const dateSpan = document.getElementById('dates');
+        const sourceSpan = document.getElementById('source');
+        const destinationSpan = document.getElementById('destination');
+        const priceSpan = document.getElementById('price');
+
+        
+        dateSpan.textContent = formData.datetime;
+        sourceSpan.textContent = formData.source;
+        destinationSpan.textContent = formData.destination;
+        priceSpan.textContent = formData.price;
+
+    } else {
+        console.log('No data stored in localStorage');
+    }
+});
+
+</script>
+</html>

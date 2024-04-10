@@ -1,0 +1,132 @@
+
+
+@media only screen and (max-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.3em; /* Adjust the value as needed */
+    }
+        
+    
+    
+    .image1{  
+        height: 683px;
+        width: 375px;
+        margin: -8px 1px 1px -8px;
+    }
+    
+    .datebox{
+        /* border: none; */
+        height: 12px;
+        width: 120px;
+        /* border: 1px solid black; */
+        position: absolute;
+        margin-top: -456px;
+        margin-left: 85px;
+        text-wrap: nowrap;
+        background: white;
+        font-size: 11px;
+
+    }
+
+    #dates{
+        margin-top: -5px;
+        position: absolute;
+        margin-left: 1px;
+        color: #f09055;
+    }
+
+    .link{
+        height: 171px;
+        width: 350px;
+        border: 1px solid black;
+        position: absolute;
+        margin: -579px 0px 0px 1px;
+        border: none;
+    }
+
+    .source{
+        margin: -536px -1px 0px 45px;
+        position: absolute;
+        background: white;
+        font-size: 14px;
+        border: none;
+        
+    }
+
+    .destination{
+        margin: -536px -1px 0px 214px;
+        position: absolute;
+        background: white;
+        font-size: 14px;
+        border: none;
+    }
+
+    .back{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border: 1px solid #ffffff00;
+    
+    }
+
+    .pricebox{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border: 1px solid black;
+        margin: -568px 0px 0px 307px;
+        border: none;
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+
+
+    .orangebox{
+        height: 20px;
+        width: 38px;
+        margin: -567px 0px 0px 306px;
+        border: 1px solid #fa8250;
+        position: absolute;
+        background: #fa8250;
+    
+    }
+
+    .greenline{
+        height: 682px;
+        position: absolute;
+        width: 1px;
+        background-color: #cfff00;
+        z-index: 1;
+        margin-left: 190px;
+        margin-top: -16px;
+
+    }
+
+    .greenline2{
+        height: 682px;
+        position: absolute;
+        width: 1px;
+        background-color: #00ef00;
+        z-index: 1;
+        margin-left: 240px;
+        margin-top: -16px;
+
+    }
+
+    .greenline3{
+        height: 682px;
+        position: absolute;
+        width: 1px;
+        background-color: #00ef00;
+        z-index: 1;
+        margin-left: 250px;
+        margin-top: -16px;
+
+    }
+    
+
+}

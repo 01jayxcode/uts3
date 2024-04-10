@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" type="image/png" href="images/title2.png"/>
+    <title>UTS</title>
+
+</head>
+<body>
+    
+        <img src="images/login.jpg" alt="" class="login">
+
+        <a href="showticket.html"><div class="showticket"></div></a>
+
+        <a href="#" class="toggle1"><div class="bookinghistory"></div></a>
+        <a href="#" class="toggle1"><div class="myprofile"></div></a>
+
+        <a href="hiddenpage.html"><div class="hiddenpage"></div></a>
+
+        <img src="images/bbar.png" alt="" class="bbar">
+        
+        
+    
+    <div class="img">
+        <img src="images/image0.png"  alt="" class="timg">
+    </div>
+
+    <div class="greenline">
+
+    </div>
+    <div class="greenline2">
+        
+    </div>
+    <div class="greenline3">
+        
+    </div>
+
+
+    <div class="bookbox">
+
+        <div class="normal">
+            <p style="    margin-top: 7px;
+            position: absolute;
+            margin-left: 18px;">NORMAL BOOKING</p>
+        </div>
+        
+
+                <span style="position: absolute;
+                z-index: 1;
+                margin:12px 0px 0px 45px;;
+                font-size: 13px;font-weight: 600;
+            ">Book & Travel</span>
+            <span style="position: absolute;
+            z-index: 1;
+            margin: 29px 0px 0px 53px;
+                font-size: 14px;font-weight: 600;
+            font-size: 13px;
+        ">(Paperless)</span>
+
+        <span style="position: absolute;
+                z-index: 1;
+                margin:12px 0px 0px 226px;;
+        font-size: 14px;font-weight: 600;
+                font-size: 13px;
+            ">Book & Print</span>
+            <span style="position: absolute;
+            z-index: 1;
+            margin: 29px 0px 0px 245px;
+        font-size: 14px;font-weight: 600;
+            font-size: 13px;
+        ">(Paper)</span>
+
+
+        <label class="toggle">
+            <input type="checkbox" id="toggleCheckbox">
+            <span class="slider"></span>
+        </label>
+
+        <div class="info">
+            <p id="lightInfo">Book Anywhere. <br>Print Ticket at originating station. <br></p>
+            <span id="redInfo">Printed Ticket is Travel authority.</span>
+            <p id="redInfo2">Travel without ticket printout is punishable.</p>
+        </div>
+
+        <div class="info2">
+            <p id="lightInfo2">Use this oprion when you are outside station <br>Premisis/Railway track. <br></p>
+            <span id="redInfo2">Display on mobile is travel authority</span>
+            <p id="redInfo22">No cancellation is allowed for paperless ticket.</p><br>
+            <p id="blueinfo">Set your phone GPS to high accuracy mode.</p>
+        </div>
+
+        <div class="depart">
+            <p class="dep">Depart From</p>
+            <p class="stn">STN</p>
+            <p class="stname">Station Name</p>
+            <span class="line">________________</span><br>
+            <button class="nexttrain">NEXT TRAIN</button>
+        </div>
+
+        <img src="images/Screenshot_2024-03-28_132353-removebg-preview.png" alt="" class="arrowimg">
+        <div class="goingto">
+            <p class="dep2">Going To</p>
+            <p class="stn2">STN</p>
+            <p class="stname2">Station Name</p>
+            <span class="line2">________________</span><br>
+            <button class="nexttrain2">GET FARE </button>
+        </div>
+
+    </div>
+    
+
+   
+
+
+</body>
+<Script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const infoDivs = document.querySelectorAll('.info2, .info');
+    const toggleBar = document.querySelector('.slider');
+
+    let toggleState = false;
+
+    toggleBar.addEventListener('click', function() {
+        toggleState = !toggleState;
+
+        if (toggleState) {
+            infoDivs[0].style.display = 'block';
+            infoDivs[1].style.display = 'none';
+        } else {
+            infoDivs[0].style.display = 'none';
+            infoDivs[1].style.display = 'block';
+        }
+    });
+
+    var overlay = document.createElement('div');
+    overlay.className = 'overlay';
+    document.body.appendChild(overlay);
+
+    var loginImage = document.querySelector('.login');
+    var overlayDiv = document.querySelector('.overlay');
+
+    document.querySelectorAll('.toggle1').forEach(function(item) {
+        item.addEventListener('click', function() {
+            loginImage.style.display = 'block';
+            overlayDiv.style.display = 'block';
+        });
+    });
+
+    loginImage.addEventListener('click', function() {
+        loginImage.style.display = 'none';
+        overlayDiv.style.display = 'none';
+    });
+
+    
+});
+
+
+
+
+</Script>
+</html>
+
